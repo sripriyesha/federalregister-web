@@ -7,7 +7,7 @@ gem 'rack'
 gem 'mysql2', '0.5.2'
 gem 'passenger', '~> 6.0' # production app server
 gem 'bootsnap', require: false
-
+gem 'sassc', '2.1.0'
 
 # AR like interface to static data hash based classes
 gem 'active_hash'
