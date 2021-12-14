@@ -28,3 +28,5 @@ node_modules/*
 
 vendor/bundle
 .passenger
+
+/config/master.key
