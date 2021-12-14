@@ -37,7 +37,7 @@ gem "carrierwave", "0.11.2"
 gem 'chronic', '~> 0.10.2'
 
 # command line integration
-gem "cocaine"
+gem "terrapin"
 
 # coffeescript integration
 gem 'coffee-rails', '~> 5.0'
