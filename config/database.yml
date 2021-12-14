@@ -1,7 +1,7 @@
 shared: &shared
   adapter: <%= ENV['DB_ADAPTER'] || 'mysql2' %>
   database: <%= ENV["MYSQL_DATABASE"] || 'federalregister_web' %>
-  username: <%= ENV["MYSQL_USERNAME"] || 'root' %>
+  username: <%= ENV["MYSQL_USERNAME"] || 'federalregister' %>
   password: <%= ENV["MYSQL_PASSWORD"] %>
   port: <%= ENV["MYSQL_PORT_3306_TCP_PORT"] || 3306 %>
   host: '<%= ENV["MYSQL_PORT_3306_TCP_ADDR"] || '127.0.0.1' %>'
