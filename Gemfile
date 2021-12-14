@@ -158,6 +158,8 @@ gem 'will_paginate-bootstrap', '~> 1.0.1'
 
 gem 'sitemap_generator'
 
+gem 'activerecord-userstamp', git: 'https://github.com/criticaljuncture/userstamp', branch: 'rails_six'
+
 group :development do
   gem 'web-console', '~> 2.0'
 end

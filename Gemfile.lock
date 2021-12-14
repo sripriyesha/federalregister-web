@@ -40,6 +40,14 @@ GIT
       omniauth (~> 1.9)
       openid_connect (~> 1.1)
 
+GIT
+  remote: https://github.com/criticaljuncture/userstamp
+  revision: a26b361c03bbf18e6e30e39894b896e4cb17a167
+  branch: rails_six
+  specs:
+    activerecord-userstamp (3.0.5)
+      rails (>= 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -589,6 +597,7 @@ PLATFORMS
 DEPENDENCIES
   active_hash
   activerecord-nulldb-adapter
+  activerecord-userstamp!
   attr_extras (~> 3.2.0)
   bootsnap
   bootstrap-sass
