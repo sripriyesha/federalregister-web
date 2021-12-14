@@ -1,4 +1,4 @@
-class CreateCommentAttachments < ActiveRecord::Migration
+class CreateCommentAttachments < ActiveRecord::Migration[6.0]
   def up
     create_table :comment_attachments do |t|
       t.string  :token

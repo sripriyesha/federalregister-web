@@ -1,4 +1,4 @@
-class ChangeConfirmationTokenLength < ActiveRecord::Migration
+class ChangeConfirmationTokenLength < ActiveRecord::Migration[6.0]
   def up
     change_column :users, :confirmation_token, :string, limit: 20
     change_column :users, :email, :string, limit: 120

@@ -1,4 +1,4 @@
-class CreateSubscriptionsAndMailingLists < ActiveRecord::Migration
+class CreateSubscriptionsAndMailingLists < ActiveRecord::Migration[6.0]
   def up
     create_table :mailing_lists do |t|
       t.text     :parameters
@@ -10,7 +10,7 @@ class CreateSubscriptionsAndMailingLists < ActiveRecord::Migration
       t.string   :type
     end
 
-    execute "insert into mailing_lists select * from fr2_production.mailing_lists"
+    execute "insert into mailing_lists select * from mailing_lists"
     execute "update mailing_lists set type = 'MailingList::Article' where type = 'MailingList::Entry'"
 
     create_table :subscriptions do |t|
@@ -44,7 +44,7 @@ class CreateSubscriptionsAndMailingLists < ActiveRecord::Migration
         created_at, updated_at, last_delivered_at, delivery_count, last_issue_delivered, environment
       )
       SELECT id, mailing_list_id, email, requesting_ip, token, confirmed_at, unsubscribed_at, created_at, updated_at, last_delivered_at, delivery_count, last_issue_delivered, environment
-      FROM fr2_production.subscriptions
+      FROM subscriptions
     SQL
   end
 

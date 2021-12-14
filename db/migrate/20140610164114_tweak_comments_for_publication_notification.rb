@@ -1,4 +1,4 @@
-class TweakCommentsForPublicationNotification < ActiveRecord::Migration
+class TweakCommentsForPublicationNotification < ActiveRecord::Migration[6.0]
   def up
     add_column :comments, :comment_document_number, :string
     rename_column :comments, :comment_published_at, :checked_comment_publication_at

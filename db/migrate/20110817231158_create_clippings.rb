@@ -1,4 +1,4 @@
-class CreateClippings < ActiveRecord::Migration
+class CreateClippings < ActiveRecord::Migration[6.0]
   def self.up
     create_table :clippings do |t|
       t.integer :user_id

@@ -1,4 +1,4 @@
-class AddAgencyParticipatingColumnToComment < ActiveRecord::Migration
+class AddAgencyParticipatingColumnToComment < ActiveRecord::Migration[6.0]
   def change
     add_column :comments, :agency_participating, :boolean
 
