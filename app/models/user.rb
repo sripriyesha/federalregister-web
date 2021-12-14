@@ -1,8 +1,6 @@
 class User
   class StaleOauthToken < StandardError; end
 
-  model_stamper
-
   attr_reader :id, :email, :email_confirmed, :token
 
   def self.find(user_id)
