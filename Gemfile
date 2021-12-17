@@ -9,6 +9,9 @@ gem 'passenger', '~> 6.0' # production app server
 gem 'bootsnap', require: false
 gem 'sassc', '2.1.0'
 
+# mimemagic 0.3.5 version fix
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
+
 # AR like interface to static data hash based classes
 gem 'active_hash'
 
