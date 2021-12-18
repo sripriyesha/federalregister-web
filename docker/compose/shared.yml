@@ -2,7 +2,7 @@ version: '2'
 
 services:
   web:
-    image: 264372021245.dkr.ecr.us-east-1.amazonaws.com/federalregister-web:latest
+    image: kailasa-federalregister-web:latest
     ports:
       - "3000:3000"
     expose:
@@ -15,10 +15,12 @@ services:
       HONEYBADGER_API_KEY: ''
       ATTACHMENTS_AWS_ACCESS_KEY_ID: 'XXX'
       ATTACHMENTS_AWS_SECRET_ACCESS_KEY: 'XXX'
-      FR_API_URL: 'https://www.federalregister.gov/api/v1'
-      FR_BASE_URL: 'https://www.federalregister.gov'
-      FR_INTERNAL_BASE_URL: 'https://www.federalregister.gov'
-      RAILS_SESSION_KEY: XXXXxxxxXXXXxxxxXXXXxxxxXXXXxxxx
+      AWS_BUCKET: 'bucketname'
+      AWS_ENDPOINT: 'https://s3.wasabisys.com'
+      FR_API_URL: 'https://fr.dev.nithyanandajnanalaya.org/api/v1'
+      FR_BASE_URL: 'https://fr.dev.nithyanandajnanalaya.org'
+      FR_INTERNAL_BASE_URL: 'https://www.fr.dev.nithyanandajnanalaya.org'
+      RAILS_SESSION_KEY: AJR4R6UTEBktmmWeHd93EZVys6pmxnCK7rZLUdJb4gZLNe7J
       CONTAINER_PROCESS: rails
     restart: always
 
